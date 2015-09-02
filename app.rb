@@ -1,12 +1,14 @@
 require 'sinatra'
 require 'pry'
 require 'sinatra/reloader'
+require_relative './models/basic'
 
 get '/' do
   erb :home
 end
 
 post '/' do
+  @result = Basic.calc(params[:num1], params[:op], params[:num2])
 # binding.pry
   erb :home
 end
