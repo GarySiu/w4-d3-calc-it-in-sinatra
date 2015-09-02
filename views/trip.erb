@@ -1,8 +1,19 @@
 <h2>Trip Calculator</h2>
-<form action="/trip" method="post">
-  <label for="distance">Distance (miles):</label><input type="text" id="distance" name="distance">
-  <label for="mpg">MPG:</label><input type="text" id="mpg" name="mpg">
-  <label for="cost">Cost ($/gallon):</label><input type="text" id="cost" name="cost">
-  <label for="speed">Speed (MPH):</label><input type="text" id="speed" name="speed">
-  <button>Calc It!</button>
-</form>
+<div class="form-container">
+  <form action="/trip" method="post">
+  <div class="form-col-left">
+    <div class="form-row"><label for="distance">Distance (miles):</label></div>
+    <div class="form-row"><label for="mpg">MPG:</label></div>
+    <div class="form-row"><label for="cost">Cost ($/gallon):</label></div>
+    <div class="form-row"><label for="speed">Speed (MPH):</label></div>
+  </div>
+  <div class="form-col-right">
+    <div class="form-row"><input type="text" id="distance" name="distance"></div>
+    <div class="form-row"><input type="text" id="mpg" name="mpg"></div>
+    <div class="form-row"><input type="text" id="cost" name="cost"></div>
+    <div class="form-row"><input type="text" id="speed" name="speed"></div>
+  </div>
+    <div class="form-row"><button>Calc It!</button></div>
+    <%= "<div class=\"result\">#{@result}</div>" if @result %>
+  </form>
+</div>
