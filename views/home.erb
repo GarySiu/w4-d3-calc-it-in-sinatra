@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calc-It! Now in Sinatra</title>
+</head>
+<body>
+  <h1>Calc-It!</h1>
+  <% if @first && @op && @second %>
+    <%= "<p>#{@first} #{@op} #{@second} =</p>" %>
+  <% end %>
+</body>
+</html>
