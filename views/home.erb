@@ -6,8 +6,16 @@
 </head>
 <body>
   <h1>Calc-It!</h1>
-  <% if @first && @op && @second %>
-    <%= "<p>#{@first} #{@op} #{@second} =</p>" %>
-  <% end %>
+  <form action="/" method="post">
+    <input type="text" name="num1">
+    <select name="op">
+      <option value="+">plus</option>
+      <option value="-">minus</option>
+      <option value="*">multiplied by</option>
+      <option value="/">divided by</option>
+    </select>
+    <input type="text" name="num2">
+    <button>Calc It!</button>
+  </form>
 </body>
 </html>
