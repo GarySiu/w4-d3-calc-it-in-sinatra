@@ -6,12 +6,7 @@ get '/' do
   erb :home
 end
 
-
-#         BAD IDEA
-#
-# get '/:first/:op/:second' do
-#   @first = params[:first]
-#   @op = params[:op]
-#   @second = params[:second]
-#   erb :home
-# end
+post '/' do
+# binding.pry
+  erb :home
+end
