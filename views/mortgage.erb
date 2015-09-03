@@ -14,9 +14,9 @@
       <div class="form-row"><label for="term">Term (months)</label></div>
     </div>
     <div class="form-col-right">
-      <div class="form-row"><input type="text" name="loan" id="loan" autofocus="true" tabindex="1"></div>
-      <div class="form-row"><input type="text" name="apr" id="apr" tabindex="2"></div>
-      <div class="form-row"><input type="text" name="term" id="term" tabindex="3"></div>
+      <div class="form-row"><input type="number" name="loan" id="loan" autofocus="true" tabindex="1"></div>
+      <div class="form-row"><input type="number" name="apr" id="apr" tabindex="2"></div>
+      <div class="form-row"><input type="number" name="term" id="term" tabindex="3"></div>
     </div>
     <div class="form-row"><button tabindex="4">Calc It!</button></div>
     <%= "<div class=\"result\">Your monthly payment will be $#{@result}</div>" if @result %>

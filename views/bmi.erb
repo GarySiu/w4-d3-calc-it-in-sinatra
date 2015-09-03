@@ -18,8 +18,8 @@
         <option value="metric">metric</option>
         <option value="imperial">imperial</option>
       </select></div>
-      <div class="form-row"><input type="text" id="mass" name="mass" tabindex="2"></div>
-      <div class="form-row"><input type="text" id="height" name="height" tabindex="3"></div>
+      <div class="form-row"><input type="number" id="mass" name="mass" tabindex="2"></div>
+      <div class="form-row"><input type="number" id="height" name="height" tabindex="3"></div>
     </div>
     <div class="form-row"><button tabindex="4">Calc It!</button></div>
     <%= "<div class=\"result\">#{@result}</div>" if @result %>
