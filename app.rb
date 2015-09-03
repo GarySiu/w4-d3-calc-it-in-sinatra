@@ -1,6 +1,6 @@
 require 'sinatra'
-require 'pry'
-require 'sinatra/reloader'
+require 'pry' if development?
+require 'sinatra/reloader' if development?
 require_relative './models/basic'
 require_relative './models/trip'
 require_relative './models/bmi'
