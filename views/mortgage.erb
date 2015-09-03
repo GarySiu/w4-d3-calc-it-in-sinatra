@@ -11,5 +11,6 @@
       <div class="form-row"><input type="text" name="term" id="term" tabindex="3"></div>
     </div>
     <div class="form-row"><button tabindex="4">Calc It!</button></div>
+    <%= "<div class=\"result\">#{@result}</div>" if @result %>
   </form>
 </div>
