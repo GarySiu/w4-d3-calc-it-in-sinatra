@@ -1,13 +1,52 @@
 body {
   /*background: hotpink;*/ /* obligatory ;) */
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+font-size: 80px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  text-align: center;
+  background: moccasin;
+}
+
+nav ul li {
+  display: inline;
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: inherit;
+}
+
+
+.form-container {
+  text-align: center;
 }
 
 .form-col-left {
   display: inline-block;
+  text-align: right;
 }
 
 .form-col-right {
   display: inline-block;
+  text-align: left;
 }
 
 .form-row {
