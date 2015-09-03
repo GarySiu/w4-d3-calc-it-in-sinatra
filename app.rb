@@ -2,6 +2,7 @@ require 'sinatra'
 require 'pry'
 require 'sinatra/reloader'
 require_relative './models/basic'
+require_relative './models/trip'
 
 get '/' do
   erb :home
@@ -37,5 +38,6 @@ end
 
 post '/trip' do
 # binding.pry
+  @result = Trip.calc(params[:distance], params[:mpg], params[:cost], params[:speed])
   erb :trip
 end
