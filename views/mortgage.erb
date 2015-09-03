@@ -1,7 +1,15 @@
-<h2>Mortgage</h2>
-<form action="/mortgage" method="post">
-  <label for="loan">Loan (£):</label><input type="text" name="loan" id="loan">
-  <label for="apr">APR (%):</label><input type="text" name="apr" id="apr">
-  <label for="term">Term (months)</label><input type="text" name="term" id="term">
-  <button>Calc It!</button>
-</form>
+<div class="form-container">
+  <form action="/mortgage" method="post">
+    <div class="form-col-left">
+      <div class="form-row"><label for="loan">Loan (£):</label></div>
+      <div class="form-row"><label for="apr">APR (%):</label></div>
+      <div class="form-row"><label for="term">Term (months)</label></div>
+    </div>
+    <div class="form-col-right">
+      <div class="form-row"><input type="text" name="loan" id="loan" autofocus="true" tabindex="1"></div>
+      <div class="form-row"><input type="text" name="apr" id="apr" tabindex="2"></div>
+      <div class="form-row"><input type="text" name="term" id="term" tabindex="3"></div>
+    </div>
+    <div class="form-row"><button tabindex="4">Calc It!</button></div>
+  </form>
+</div>
