@@ -23,6 +23,11 @@ nav ul li {
   padding: 10px;
 }
 
+nav ul li .highlighted {
+  padding: 0 10px;
+  background: #fff;
+}
+
 nav ul li a {
   text-decoration: inherit;
 }
